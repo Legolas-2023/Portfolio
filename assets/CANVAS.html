@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+	<link rel="shortcut icon" href="/assets/RM_ELEVATOR 13 cm x 6,5 cm.png" type="image/x-icon">
+	<title> RM Elevator </title>
+	
+</head>
+<style>
+
+
+.quebra1{
+
+margin: 0px;
+
+}
+.img12{
+width: auto;
+margin: 0px;
+text-align: center;
+border: 8px solid #ad0500;
+}
+
+
+.texto1{
+font-size: 50px;
+margin: 0px;
+text-align: center;
+margin-bottom: 10px;
+
+}
+
+.cnv-container{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:repeat(3,184px);
+	gap:15px 15px;
+	grid-template-areas:"a a b b c c d d e e" "a a f f c c g g e e" "h h h h h i i i i i"}
+	
+	
+	.cnv-container>*{border-radius:10px;padding:8px}
+	.cnv-container.cnv-container-feed:hover{-ms-transform:scale(1.01);transform:scale(1.01)}
+	
+	.cnv-group{
+		display:-ms-flexbox;
+		display:flex;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-ms-flex-pack:justify;
+		justify-content:space-between;
+		background-color:#EBEBEB;
+		overflow:auto;
+		}
+		
+		.cnv-group::-webkit-scrollbar{
+		width:4px;
+		background-color:transparent;
+		border-radius:100px;
+		-webkit-border-radius:100px;
+		
+		}
+		
+		.cnv-group::-webkit-scrollbar:hover{background-color:rgba(0,0,0,.09)}
+		
+		.cnv-group::-webkit-scrollbar-thumb:vertical{
+		background:rgba(0,0,0,.3);
+		border-radius:100px;-webkit-border-radius:100px;
+		}
+		
+		.cnv-group::-webkit-scrollbar-thumb:vertical:active{
+		background:rgba(0,0,0,.61);
+		border-radius:100px;
+		-webkit-border-radius:100px;
+		}
+		
+		.cnv-group-title-container{display:-ms-flexbox;display:flex}
+		.cnv-icon{width:24px;height:24px}
+		.cnv-group-title-divider{
+		width:2px;
+		min-width:2px;
+		max-width:2px;
+		border-radius:12px;
+		margin:0 4px;
+		}
+		
+		.title-canvas-group{
+		margin:3px;
+		font-size:15px;
+		font-weight:600;
+		display:-ms-flexbox;
+		display:flex;
+		}
+		
+		.title-canvas-group.g-1{color:#BB2C49}
+		.title-canvas-group.g-2{color:#D46FA5}
+		.title-canvas-group.g-3{color:#5EAB2B}
+		.title-canvas-group.g-4{color:#FCB04A}
+		.title-canvas-group.g-5{color:#FB6B3B}
+		.title-canvas-group.g-6{color:#189BBB}
+		.title-canvas-group.g-7{color:#2ABE85}
+		.title-canvas-group.g-8{color:#7F367F}
+		.title-canvas-group.g-9{color:#845835}
+		
+		.cnv-container-postits{
+		display:-ms-flexbox;
+		display:flex;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap;
+		padding-top:6px;
+		}
+		
+
+		
+.cnv-postit{
+border-radius:10px;
+padding:6px 8px;
+margin-top:8px;
+width:100%;
+display:-ms-flexbox;
+display:flex;
+-ms-flex-pack:justify;
+justify-content:space-between;
+word-break:break-all;
+
+}
+
+.cnv-postit.edit:hover
+
+ .cnv-edit-postit{display:initial}
+ .cnv-postit .cnv-edit-postit{display:none}
+ .cnv-postit.p-green,.cnv-postit.p-ltGreen{background-color:#93C863}
+ .cnv-postit.p-ltYellow,.cnv-postit.p-yellow{background-color:#FFD977}
+ .cnv-postit.p-blue,.cnv-postit.p-ltBlue{background-color:#79CDE0}
+ .cnv-postit.p-ltPink,.cnv-postit.p-pink{background-color:#EB91C1}
+ .cnv-postit.p-half{width:45%}
+ .cnv-postit.p-half:nth-child(odd){margin-right:2%}
+ .cnv-postit.p-half:only-child{width:100%;margin-right:0}
+ .cnv-postit:first-child:not(.p-half){margin-top:4px}
+ 
+
+
+</style>
+
+<body>
+	<div class="quebra1" style="text-align:center">
+	<image class="img12"  src="https://static.wixstatic.com/media/a4194e_8fb35d58e3a24d94a37e517aa3c3ea0c~mv2.gif">
+	<hr color="#ad0500">
+	<h5 class="texto1"> Canvas <span style="color: red;"> RM </span> Elevator</h5>
+	</div>
+
+	<span class="feed-canvas">
+
+		<div class="cnv-container cnv-container-feed">
+			<div style="grid-area:a;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon"  src="https://static.wixstatic.com/shapes/a4194e_327ba646df3f4e1f91852d1ca535d9bc.svg">
+							<p class="title-canvas-group g-1">
+								<b class="cnv-group-title-divider" style="background-color:#BB2C49;"></b>
+								<span>Parceiros chave</span>
+							</p>
+					</span>
+			<div class="cnv-container-postits">
+					<div class="cnv-postit p-blue">
+						<span>Empresa Logística De Transportes - Atlas;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+					</div>
+					<div class="cnv-postit p-blue">
+						<span>SENAI Pirapetinga UI Dirceu de Oliveira Martins;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+
+					</div>
+					<div class="cnv-postit p-blue">
+						<span>ACR - Fornecedor de esteiras e elevadores industriais;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+					</div>
+					<div class="cnv-postit p-blue">
+						<span>Eletrônica Mattos.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+					</div>
+			</div>
+				</span>
+			</div>
+
+
+			<div style="grid-area:b;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_ac7c70d389574c878add15322bccf8d0.svg">
+						<p class="title-canvas-group g-2">
+						<b class="cnv-group-title-divider" style="background-color:#D46FA5;"></b>
+						<span>Atividades chave</span>
+					</p>
+					</span>
+
+
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue">
+							<span>Treinamento para a equipe;</span>
+								<button class="btn cnv-edit-postit">
+									<span class="s s-pencil"></span>
+								</button>
+						</div>
+						
+					<div class="cnv-postit p-blue">
+						<span>Pesquisa de mercado;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+					</div>
+					<div class="cnv-postit p-blue">
+						<span>Aluguel de estoque para armazenamento de nossos produtos.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+					</div>
+
+					</div>
+				</span>
+			</div>
+
+
+			<div style="grid-area:f;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_f6e925afb64d4d588c25efb6b9f34a12.svg">
+						<p class="title-canvas-group g-3">
+							<b class="cnv-group-title-divider" style="background-color:#5EAB2B;"></b>
+							<span>Recursos chave</span>
+							</p>
+
+					</span>
+					
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue">
+							<span>Mão de obra especializada: mecânico e eletricista;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+
+
+						<div class="cnv-postit p-blue">
+							<span>Recursos tecnológicos: automação;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+
+						</div>
+						
+						<div class="cnv-postit p-blue">
+							<span>Matéria prima principal alumínio, ferro.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+
+
+			<div style="grid-area:c;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_c891ba07688a4367bc0625332b10071c.svg">
+						<p class="title-canvas-group g-4">
+							<b class="cnv-group-title-divider" style="background-color:#FCB04A;"></b>
+							<span>Proposta de valor</span>
+						</p>
+					</span>
+				<div class="cnv-container-postits">
+					<div class="cnv-postit p-blue">
+						<span>Agilidade no processo produtivo;</span>
+						<button class="btn cnv-edit-postit">
+							<span class="s s-pencil"></span>
+						</button>
+					</div>
+					<div class="cnv-postit p-blue">
+						<span>Evitar o trabalho manual dos funcionários, mitigando assim quaisquer atividades envolvendo riscos ergonômicos e acidentes.</span>
+						<button class="btn cnv-edit-postit">
+							<span class="s s-pencil"></span>
+						</button>
+					</div>
+				</div>
+				</span>
+			</div>
+			
+			<div style="grid-area:d;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_a16d2be0e5274828966aade4d8194d3c.svg">
+						<p class="title-canvas-group g-5">
+							<b class="cnv-group-title-divider" style="background-color:#FB6B3B;"></b>
+							<span>Relacionamento com o cliente</span>
+						</p>
+					</span>
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue">
+							<span>Visitas comerciais para venda e avaliação do produto em utilização;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Atendimento personalizado;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Garantia estendida por um ano aos clientes.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+			
+			<div style="grid-area:g;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_5f2fab1c99484b259d821d31fd893e61.svg">
+						<p class="title-canvas-group g-6">
+							<b class="cnv-group-title-divider" style="background-color:#189BBB;"></b>
+							<span>Canais</span>
+						</p>
+					</span>
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue">
+							<span>Site de propagandas;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Instagram;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Youtube;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Linkedin;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue">
+							<span>Site da empresa.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+
+
+			<div style="grid-area:e;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_50673b6112c74bfca42ba9bcd7c3fdf9.svg">
+						<p class="title-canvas-group g-7">
+							<b class="cnv-group-title-divider" style="background-color:#2ABE85;"></b>
+							<span>Segmento de mercado</span>
+						</p>
+					</span>
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-yellow">
+							<span>Indústrias que necessitem de nosso produto para corrigir alguma deficiência em seu processo produtivo;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-pink">
+							<span>Empresa de fabricação de fogões e fornos.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+
+			<div style="grid-area:h;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_91a8b7f359c64b3d96c4b066ac023161.svg">
+						<p class="title-canvas-group g-8">
+							<b class="cnv-group-title-divider" style="background-color:#7F367F;"></b>
+							<span>Estrutura de custos</span>
+						</p>
+					</span>
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue p-half">
+							<span>Salário dos funcionários;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Água;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Internet;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Aluguel de imóveis;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Energia elétrica utilizada para fabricação do produto.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+
+			<div style="grid-area:i;" class="cnv-group">
+				<span>
+					<span class="cnv-group-title-container">
+						<img class="cnv-icon" src="https://static.wixstatic.com/shapes/a4194e_06e9fdecc27642e193122f8983ec162f.svg">
+						<p class="title-canvas-group g-9">
+							<b class="cnv-group-title-divider" style="background-color:#845835;"></b>
+							<span>Fontes de renda</span>
+						</p>
+					</span>
+					<div class="cnv-container-postits">
+						<div class="cnv-postit p-blue p-half">
+							<span>Venda da esteira e do elevador;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Prestação de serviços de manutenção da esteira e elevador após um ano de funcionamento do produto;</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+						<div class="cnv-postit p-blue p-half">
+							<span>Pagamentos realizados com cartão de crédito, cheques, dinheiro e débito.</span>
+							<button class="btn cnv-edit-postit">
+								<span class="s s-pencil"></span>
+							</button>
+						</div>
+					</div>
+				</span>
+			</div>
+
+		</div>
+	</span>
+
+</body>
+</html>

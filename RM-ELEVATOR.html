@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rmelevator.css">
+    <link rel="stylesheet" href="head-cabecalho.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/img_1.png" type="image/x-icon">
+    <title>RM Elevator | Portfólio</title>
+</head>
+<body>
+    <header>
+        <input type="button"  id="navopen" onclick="navabre()" value="☰">
+        <nav id="navegacao"> 
+            <input type="button" value="&times;"  onclick="navfecha()" id="navclose">
+            <h1 id="title-sidebar">Bem Vindo(@)!</h1>
+            <ul>
+                <li class="paginas-navegacao"><a onclick="navfecha()" href="index.html">Crystian Tasca</a></li>
+                <li class="paginas-navegacao"><a onclick="navfecha()" href="#SSI2023">Saga Senai De Inovação 2023</a></li>
+                <li class="paginas-navegacao"><a onclick="navfecha()" href="#pitch">RM Elevator</a></li>
+                <li class="paginas-navegacao"><a onclick="navfecha()" href="#prototipo-sujo">Protótipo</a></li>
+                <li class="paginas-navegacao"><a onclick="navfecha()" href="#conclusao">Considerações Finais</a></li>
+            </ul>
+        </nav>
+        <h1 id="titulo-portfolio">SAGA SENAI INOVAÇÃO 2023</h1>
+        <div class="trilho">
+            <div class="indicador"></div>
+        </div>
+    </header>
+    <aside id="SSI2023">
+        <a href="https://plataforma.gpinovacao.senai.br/plataforma/desafio/1162" target="_blank">
+            <h3>SAGA SENAI DE INOVAÇÃO 2023</h3>
+        </a>
+    </aside>
+    
+    <main>
+        <section id="introducao">
+            <article id="introducao-descricao">
+                <p>Este projeto tem por objetivo analisar, melhorar e automatizar a operação da fabricação de fogões e fornos da empresa Pratica Klimaquip e Comércio S.A localizado em Pouso Alegre – MG. A ideia central do projeto é criar uma solução que atenda a empresa de forma que evite riscos ergonômicos e de acidentes aos colaboradores da empresa. Por conta disso, foi feito um Brainstorming com várias ideias possíveis para que atendam a demanda da empresa de forma a viabilizar o valor estipulado por ela. Portanto, a solução foi criada pensando a partir de uma máquina e dos avanços da tecnologia da indústria 4.0 utilizando seus sensores e microcontroladores (Arduino Uno R3) para poder ajudar no desempenho do processo e também ser de fácil manutenção para que não ocasione gargalos ou retrabalhos para a empresa. 
+                </p>
+            </article>
+            <div id="introducao-video">
+                <iframe id="introducao-video-IA" width="560" height="400" src="https://www.youtube.com/embed/z96HeETzjdo?si=MbZbTeGgtV-0Gn4J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pitch">
+            <h2 id="pitch-titulo">
+                <span id="pitch-RM">RM</span> Elevator
+            </h2>
+            <div id="pitch-video">
+                <iframe width="560" height="400" id="pitch-video-RM" src="https://www.youtube.com/embed/qtMx5gcBZvQ?si=3Z3ioAFqmuHXDONR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="prototipo">
+            <div id="prototipo-video">
+                    <iframe id="prototipo-video-Prt" width="560" height="400" src="https://www.youtube.com/embed/I-mi-3cPmOA?si=YBoy4ETIU4uLBbNt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <article id="prototipo-descricao">
+                <p>A empresa estava tendo uma dificuldade em sua linha de produção de fornos, pois as bandejas utilizadas para base dos fornos se empilhavam no final da esteira se acumulando, sendo que cada bandeja tem peso de 26 kg, além disso, um colaborador era responsável por carrega-las até o início da linha novamente o que causava riscos ergonômicos, de acidentes por conta dos movimentos repetitivos e perda de tempo no processo produtivo. 
+                Para otimizar o processo produtivo e auxiliar os colaboradores neste processo de manuseio das bandejas em função do excesso de peso das mesmas e consequências à saúde e bem - estar dos seus colaboradores, por conta disso, nós da <span id="descricao-Elevator"><span id="descricao-RM">RM </span>Elevator</span> desenvolvemos um complemento à esteira de roletes (uma esteira reta) e um elevador automático para transportar as bandejas até o início do processo. O que traz mais praticidade e segurança ao processo das empresas, em especial à Klimaquip.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="prototipo-sujo">
+            <h2 id="prototipo-sujo-titulo">Protótipo</h2>
+            <article id="prototipo-sujo-corpo">
+                <picture class="prototipo-picture">
+                    <img class="prototipo-imagens" src="assets/ps-senai2.jpg" alt="Protótipo Sujo">
+                    <figcaption class="prototipo-figcaption">Protótipo Sujo</figcaption>
+                </picture>
+                <i class="bi bi-arrow-repeat"></i>
+                <picture class="prototipo-picture">
+                    <img class="prototipo-imagens" src="assets/ps-limpo.jpeg" alt="Protótipo Limpo">
+                    <figcaption class="prototipo-figcaption">Protótipo Limpo</figcaption>
+                </picture>
+            </article>
+        </section>
+
+
+        <section id="conclusao">
+            <h2 id="conclusao-titulo">Considerações Finais</h2>
+            <div id="conclusao-musica">
+                <video id="conclusao-video" controls controlsList="nodownload">
+                    <source src="/videos/Playlist - RM ELEVATOR (2).mp4" type="video/mp4">
+                    <track kind="subtitles" src="/videos/ClosedCaptions_pt.vtt" srclang="Português" oncanplay="onclick"/>
+                    <track kind="subtitles" src="/videos/ClosedCaptions_en.vtt" srclang="Inglês" oncanplay="onclick"/>
+                </video>
+                <videotext>Ative as Legendas do Vídeo</videotext>
+            </div>
+            <article id="conclusao-grupo">
+                <picture class="conclusao-picture">
+                    <a href="assets/ps-final.jpeg" target="_blank">
+                        <img class="conclusao-imagens" src="assets/ps-final.jpeg" alt="Equipe RM Elevator">
+                    </a>
+                </picture>
+
+                <picture class="conclusao-picture">
+                    <a href="assets/ps-senai.png" target="_blank">
+                        <img class="conclusao-imagens" src="assets/ps-senai.png" alt="Apresentação PS">
+                    </a>
+                </picture>
+
+                <picture class="conclusao-picture">
+                    <a href="assets/ps-final2.jpeg" target="_blank">
+                        <img class="conclusao-imagens" src="assets/ps-final2.jpeg" alt="Apresentação PL">
+                    </a>
+                </picture>
+            </article>
+        </section>        
+    </main>
+    <footer id="rodape">
+        <section id="rodape-outros">
+
+            <a href="/assets/CANVAS.html" target="_blank" class="box">
+                <h3>Canva</h3>
+                <i class="bi bi-filetype-pdf"></i>
+            </a>
+           
+            <a href="http://" target="_blank" class="box">
+                <h3>WebSite RM Elevator</h3>
+                <i class="bi bi-link-45deg"></i>
+            </a>
+            
+            <a href="https://www.youtube.com/@RMELEVATOR" target="_blank" class="box">
+                <h3>@RMELEVATOR</h3>
+                <i class="bi bi-youtube"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/rm_elevator?igsh=NWNpM2UwOGxuY2o0" target="_blank" class="box">
+                <h3>@rm_elevator</h3>
+                <i class="bi bi-instagram"></i>
+            </a>    
+        </section>
+
+        <section id="Copyright"> 
+            <a href="index.html">
+                <p>Copyright &copy; Crystian Tasca 2024</p>
+            </a>
+        </section>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
