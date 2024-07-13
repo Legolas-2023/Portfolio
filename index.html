@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#006EDF">
+
+        <title>Crystian Tasca - Website | Portfólio</title>
+
+        <link rel="shortcut icon" href="assets/img_1.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="./style/head-cabecalho.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        <header>
+            <input type="button"  id="navopen" value="☰">
+
+            <nav id="navegacao"> 
+                <input type="button" value="&times;" id="navclose">
+
+                <h1 id="title-sidebar">Bem Vindo(@)!</h1>
+                <ul>
+                    <li class="paginas-navegacao"><a href="#introducao">Crystian Tasca</a></li>
+                    <li class="paginas-navegacao"><a href="#about">Sobre</a></li>
+                    <li class="paginas-navegacao"><a href="#tools">Ferramentas</a></li>
+                    <li class="paginas-navegacao"><a href="#projects">Projetos</a></li>
+                    <li class="paginas-navegacao"><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <h1 id="titulo-portfolio">Portfólio</h1>
+
+            <div class="trilho">
+                <div class="indicador"></div>
+            </div>
+        </header>
+    
+        <section id="introducao">
+            <article id="corpo-introducao">
+                <div class="corpo-titulo">
+                    <hgroup id="titulo">
+                        <h1>Olá,&nbsp;</h1>
+                        <p id="p_nome">Me chamo Crystian.</p>
+                    </hgroup> 
+
+                    <div id="actions">
+                        <a id="download-cv" href="./assets/Crystian Tasca Mattos.pdf" download>Download CV</a>   
+                        <a id="enter-contato" href="mailto:crystianmattos20@gmail.com" target="_blank">Entrar em contato</a>   
+                    </div>                 
+                </div>
+
+                <a href="https://www.github.com/Legolas-2023" id="corpo-imagem" target="_blank">
+                    <img id="logo-fundo" src="./assets/fundo.png" alt="Fundo Spiral">
+                    <img id="logo-1" src="./assets/logo.png" alt="Foto Crystian">
+                </a>
+                
+            </article>
+            <aside id="arrow">
+                <a href="#about"><i class="bi bi-arrow-down-circle"></i></a>
+            </aside>
+        </section>
+
+        <main id="index">
+            <section id="about">
+                <h2>Sobre Mim</h2>
+                <p id="group">
+                    Sou Analista em Sistemas baseado em aplicações Developer Front End e aplicações envolvendo a robótica. Apaixonado pelo mundo da programação, meu objetivo é sempre desenvolver projetos e estou sempre em busca de novos aprendizados. Gosto de aprender e a ensinar, como diz, segundo o filósofo Paulo Freire: <span>"Quem ensina aprende ao ensinar. E quem aprende ensina ao aprender."</span>
+                </p>
+            </section>
+
+            <section id="tools">
+                <h2>Principais Tecnologias e Ferramentas:</h2>
+                <aside id="tools-imagens" data-ferramentas>
+                </aside>
+            </section>
+
+            <section id="projects">
+                <h2>Projetos</h2>
+                <aside id="projects-imagens" data-projetos>
+                </aside>
+            </section>
+ 
+            <footer id="contact">
+                <h2>Contato</h2>
+                <aside id="icons-contact">
+                    <a id="card" class="icon-link" href="https://www.linkedin.com/in/crystian-tasca" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        <h3>Linkedin</h3>
+                        <p class="link-rede">@crystian-tasca</p>
+                    </a>
+                    <a id="card" class="icon-link" href="mailto:crystianmattos20@gmail.com" target="_blank">
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <h3>E-mail</h3>
+                        <p  class="link-rede">crystianmattos20@gmail.com</p>
+                    </a>
+                    <a id="card" class="icon-link" href="https://www.github.com/Legolas-2023" target="_blank">
+                        <i class="bi bi-github appli"></i>
+                        <h3>Github</h3>
+                        <p  class="link-rede">@Legolas-2023</p>
+                    </a>
+                    <a id="card" class="icon-link" href="https://api.whatsapp.com/send?phone=5532998147490" target="_blank">
+                        <i class="bi bi-telephone-fill"></i>
+                        <h3>Telefone</h3>
+                        <p  class="link-rede">(32) 99814-7490</p>
+                    </a>
+                </aside>
+                <div id="Copyright"> 
+                    <p>Copyright &copy; Crystian Tasca 2024</p>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/mostrarFerramentas.js"></script>
+    <script type="module" src="./js/mostrarProjetos.js"></script>
+</html>

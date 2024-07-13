@@ -1,0 +1,92 @@
+{
+    "Ferramentas":[
+
+        {
+        "id":1,
+        "nome":"HTML5",
+        "imagem": "/assets/icons/html.svg"
+        },
+
+        {
+        "id":2,
+        "nome":"CSS3",
+        "imagem": "/assets/icons/css.svg"
+        },
+
+        {
+        "id":3,
+        "nome":"JavaScript",
+        "imagem": "/assets/icons/javascript.svg"
+        },
+        
+        {
+        "id":4,
+        "nome":"PHP",
+        "imagem": "/assets/icons/php.svg"
+        },
+
+        {
+        "id":5,
+        "nome":"Bootstrap",
+        "imagem": "/assets/icons/bootstrap.svg"
+        },
+
+        {
+        "id":6,
+        "nome":"GitHub",
+        "imagem": "/assets/icons/github.svg"
+        },
+
+        {
+        "id":7,
+        "nome":"SQL",
+        "imagem": "/assets/icons/sql.svg"
+        },
+
+        {
+        "id":8,
+        "nome":"Arduino",
+        "imagem": "/assets/icons/arduino.svg"
+        },
+
+        {
+        "id":9,
+        "nome":"NotePad++",
+        "imagem": "/assets/icons/notepad++.svg"
+        },
+
+        {
+        "id":10,
+        "nome":"VSCode",
+        "imagem": "/assets/icons/vs_code.svg"
+        }
+    ],
+
+    "Projetos": [
+        {
+            
+        "id":1,
+        "titulo": "IMC - Índice de Massa Corporal",
+        "imagem": "assets/project_imc.png",
+        "link": "https://github.com/Legolas-2023/IMC"
+    },
+
+    {
+            
+        "id":2,
+        "titulo": "Alura Decodificador",
+        "imagem": "assets/project_decodificador.png",
+        "link": "https://github.com/Legolas-2023/Decodificador"
+    },
+
+    {
+            
+        "id":3,
+        "titulo": "RM Elevator",
+        "imagem": "assets/RM_Elevator.gif",
+        "link": "RM-ELEVATOR.html"
+    }
+
+    ]
+
+}
