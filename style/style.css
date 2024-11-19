@@ -1,6 +1,14 @@
 /*=========== Introdução =========== */
-section#introducao{
+section.introducao{
     background-image: url('/assets/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 10px 10px 10px var(--color2);
+}
+
+section.introducao_light{
+    background-image: url('/assets/background_2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -165,7 +173,6 @@ h2{
 
 p#group{
     font-size: 1.25rem;
-    color: var(--color4);
     font-family: var(--font3);
 }
 
@@ -234,38 +241,71 @@ figure.projects-imagens-screen{
     position: relative;
 }
 
+aside#projects-imagens{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    font-family: var(--font3);
+}
+
+figure.projects-imagens-screen{
+    position: relative;
+}
+
 img.screen{
     border-radius: 20px;
-    filter: brightness(20%);
+    box-shadow: 1px 1px 10px var(--color6);
+    filter: drop-shadow(1px 1px 10px var(--color6));
+    filter: brightness(100%);
     width:30vw;
 }
 
-img.screen:hover{
-    filter: brightness(100%);
+figure:hover img.screen{
+    filter: brightness(20%);
     transform: scale(1.02,1.02);
-    cursor: pointer;
     transition:.5s ease-in-out;
 }
 
-figure:hover figcaption.captiontext{
-    display: none;
-    transition: .5s ease-in-out;
+figcaption.captiontext{
+    opacity: 0;
+    position:absolute;
+    top:0;
+    right: 0;
+    left:0;
+    bottom: 0;
 }
 
-figcaption.captiontext{
-    padding:10px;
-    color:var(--color5);
-    font-size:1.25rem;  
-    position:absolute;
-    height:100%;
-    top:0;
-    left:0;
-    right:0;
-    left:0;
+figure:hover figcaption.captiontext{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: .5s ease-in-out;
+    color:var(--color5);
+    font-size:1.25rem;
+    opacity: 1;
+    cursor: pointer;
 }
+
+h4#T_Projetos{
+    font-size: 1.25rem;
+}
+
+a#BT-Link{
+    border:1px solid var(--color4);
+    border-radius: 10px;
+    padding:10px 20px;
+    transition: .5s all ease-in-out;
+}
+
+a#BT-Link:hover{
+    border:1px solid var(--color2);
+    background-color: var(--color3);
+    color:var(--color5);
+}
+
 
 /*========== RODAPÉ ==========*/
 
@@ -325,7 +365,6 @@ a{
 }
 
 p.link-rede {
-    color:var(--color4);
     font-size: 1rem;
     display: flex;
 }
@@ -338,7 +377,6 @@ div#Copyright{
     background-color: var(--color3);
     color: var(--color4);
 }
-
 
 /*==========@media screen==========*/
 
