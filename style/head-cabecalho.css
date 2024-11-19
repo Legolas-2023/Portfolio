@@ -57,7 +57,7 @@ header{
     top: 0;
     z-index: 100;
     background-color: inherit;
-    padding: 10px 20px;
+    padding: 10px;
     font-family: var(--font1);
     display: flex;
     flex-direction: row;
@@ -171,6 +171,32 @@ h1#titulo-portfolio{
     color:var(--color2);
 }
 
+div.trilho{
+    border: 1px solid var(--color2);
+    border-radius: 60px;
+    padding: 0px 20px;
+    z-index: -100;
+    cursor: pointer;
+}
+
+div.indicador{
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+    filter: drop-shadow(1px 1px 10px var(--color6));
+    border-radius: 50px;
+    padding:10px;
+    transform: translateX(-20px);
+    transition: .5s all;
+    color: var(--color5);
+}
+
+div.indicadorSol{
+    transform: translateX(20px);
+    background-color: #3B5EED;
+    transition: .5s all;
+}
+
+
 h2{
     font-size: 3rem;
     font-family: var(--font2);
@@ -204,6 +230,20 @@ h2{
     li.paginas-navegacao a{
         font-size: 1rem;
     }
+
+    div.trilho{
+        padding: 0px 10px;
+    }
+    
+    div.indicador{
+        padding:5px;
+        transform: translateX(-10px);
+    }
+
+    div.indicadorSol{
+        transform: translateX(10px);
+    }
+    
 }
 
 @media (max-width:350px){
@@ -212,5 +252,18 @@ h2{
     }
     h1#titulo-portfolio{
         font-size: 1rem;
+    }
+
+    div.trilho{
+        padding: 0px 7px;
+    }
+    
+    div.indicador{
+        padding:2.5px;
+        transform: translateX(-7px);
+    }
+
+    div.indicadorSol{
+        transform: translateX(7px);
     }
 }
