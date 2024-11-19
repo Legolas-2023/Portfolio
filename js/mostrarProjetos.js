@@ -5,10 +5,11 @@ const listaP = document.querySelector('[data-projetos]')
 function constroiCardProjetos(titulo, imagem, link){
     const cardsProjetos = document.createElement('figure');
     cardsProjetos.className = "projects-imagens-screen";
-    cardsProjetos.innerHTML = ` <a href="${link}" target="_blank">
-                            <img src="${imagem}" class="screen" alt="${titulo}">
-                        </a>
-                        <figcaption class="captiontext">${titulo}</figcaption>`
+    cardsProjetos.innerHTML = ` <img src="${imagem}" class="screen" alt="teste">
+                                <figcaption class="captiontext">
+                                    <h4 id="T_Projetos">${titulo}</h4>
+                                    <a href="${link}" id="BT-Link" target="_blank" >Ver Projeto</a>
+                                </figcaption>`
 
     return cardsProjetos
 }
