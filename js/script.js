@@ -25,6 +25,7 @@ let aparecerSL = document.querySelector('#aparecerLuaSol');
 let imagemIntroducao = document.querySelector('.introducao');
 let botaoContato = document.querySelector('.enter-contato');
 let secaoSobre = document.querySelector('.group');
+let contactCards = document.querySelector('.contact-cards')
 
 btn.addEventListener('click', (el) =>{
   let light = indicador.classList.toggle('indicadorSol')
@@ -32,6 +33,7 @@ btn.addEventListener('click', (el) =>{
   imagemIntroducao.classList.toggle('introducao-light')
   botaoContato.classList.toggle('enter-contato-light')
   secaoSobre.classList.toggle('group-light')
+  contactCards.classList.toggle('cards-light')
 
   if(light){
     document.body.style.backgroundColor = 'var(--color5)'
