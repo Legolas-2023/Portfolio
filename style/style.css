@@ -318,8 +318,14 @@ a#BT-Link:hover{
 
 
 /*========== RODAPÉ ==========*/
-footer{
+footer.contact-cards{
     background-color: var(--color1);
+    transition: 5s ease-in-out;  
+}
+
+footer.cards-light{
+    background-color: var(--color2); 
+    transition: 5s ease-in-out;  
 }
 
 aside#icons-contact{
