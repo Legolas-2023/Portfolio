@@ -5,9 +5,10 @@ section.introducao{
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 10px 10px 10px var(--color2);
+    transition: .5s all;
 }
 
-section.introducao_light{
+section.introducao-light{
     background-image: url('/assets/background_2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -69,7 +70,7 @@ a#download-cv:hover{
     background-color: var(--color3);
 }
 
-a#enter-contato{
+a.enter-contato{
     padding:10px;
     width:40%;
     text-align: center;
@@ -80,10 +81,15 @@ a#enter-contato{
     transform: scale(1.1,1.1);
 }
 
-a#enter-contato:hover{
+a.enter-contato:hover{
     transition: .2s ease-in;
     transform: scale(1.08,1.08);
     background-color: var(--color2);
+    color:var(--color5);
+}
+
+a.enter-contato-light{
+    color: var(--color1);
 }
 
 a#corpo-imagem{
@@ -171,12 +177,16 @@ h2{
     text-align: center;
 }
 
-p#group{
+p.group{
     font-size: 1.25rem;
     font-family: var(--font3);
 }
 
-p#group span{
+p.group-light{
+    color: var(--color1);
+}
+
+p.group span{
     color: var(--color4);
     background-color: var(--color3);
     opacity:0;
@@ -308,6 +318,9 @@ a#BT-Link:hover{
 
 
 /*========== RODAPÉ ==========*/
+footer{
+    background-color: var(--color1);
+}
 
 aside#icons-contact{
     display: flex;
@@ -329,6 +342,7 @@ a#card{
     flex-wrap: wrap;
     flex-shrink: 1;
 }
+
 a#card:nth-child(2){
     width:auto;
 }
@@ -352,9 +366,9 @@ i.bi-linkedin, .appli, .bi-envelope-at-fill, .bi-telephone-fill{
 
 #card:hover > i{
     background-color: var(--color5);
-
 }
-h3{
+
+h3.title-link{
     color:var(--color5);
     font-weight: 500;
     margin-top: 40px;
@@ -487,7 +501,7 @@ div#Copyright{
 
     aside#projects-imagens{
         display: grid;
-        grid-template: repeat(1,24%)/repeat(1,90%);
+        grid-template: repeat(1,auto)/repeat(1,90%);
         justify-content: center;
         align-items: center;
         font-family: var(--font3);
