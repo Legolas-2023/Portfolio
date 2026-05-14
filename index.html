@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,106 +18,105 @@
 
         <link rel="shortcut icon" href="assets/img_1.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="./style/head-cabecalho.css">
-        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/output.css">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
-    <body>
-        <header>
-            <input type="button"  id="navopen" value="☰">
+    <body class="bg-color5 dark:bg-color1 transition duration-700 dark:text-color4 text-color1">
+        <header class="sticky top-0 z-10 bg-inherit p-[10px] font-robotMono flex justify-between items-center border-b border-b-color2 animate-fadeIn h-[10vh]">
+            <input type="button" id="navopen" class="bg-inherit text-color2 text-[1.7rem] cursor-pointer transition duration-700" value="☰">
 
-            <nav id="navegacao"> 
-                <input type="button" value="&times;" id="navclose">
+            <nav id="navegacao" class="hidden fixed w-full bg-rgbaBlack backdrop-blur-md duration-1000 top-0 left-0 text-center animate-fadeIn h-screen"> 
+                <input type="button" value="&times;" class="bg-transparent border border-transparent text-color4 text-[4rem] cursor-pointer absolute right-0 top-0 transition duration-700 hover:text-color2" id="navclose">
 
-                <h1 id="title-sidebar">Bem Vindo(@)!</h1>
-                <ul>
-                    <li class="paginas-navegacao"><a href="#introducao">Crystian Tasca</a></li>
-                    <li class="paginas-navegacao"><a href="#about">Sobre</a></li>
-                    <li class="paginas-navegacao"><a href="#tools">Ferramentas</a></li>
-                    <li class="paginas-navegacao"><a href="#projects">Projetos</a></li>
-                    <li class="paginas-navegacao"><a href="#contact">Contato</a></li>
+                <h1 id="title-sidebar" class="text-4xl pt-[50px] text-color2 font-bold font-robotoMono">Bem Vindo(@)!</h1>
+                <ul class="relative flex flex-col justify-center items-center gap-6 my-10 mx-auto font-robotoMono text-color4">
+                    <li class="paginas-navegacao group"><a href="#introducao" class="group-hover:text-color5 group-hover:drop-shadow-xs group-hover:border-b-2 group-hover:border-color5;">Crystian Tasca</a></li>
+                    <li class="paginas-navegacao group"><a href="#about" class="group-hover:text-color5 group-hover:drop-shadow-xs group-hover:border-b-2 group-hover:border-color5">Sobre</a></li>
+                    <li class="paginas-navegacao group"><a href="#tools" class="group-hover:text-color5 group-hover:drop-shadow-xs group-hover:border-b-2 group-hover:border-color5">Ferramentas</a></li>
+                    <li class="paginas-navegacao group"><a href="#projects" class="group-hover:text-color5 group-hover:drop-shadow-xs group-hover:border-b-2 group-hover:border-color5">Projetos</a></li>
+                    <li class="paginas-navegacao group"><a href="#contact" class="group-hover:text-color5 group-hover:drop-shadow-xs group-hover:border-b-2 group-hover:border-color5">Contato</a></li>
                 </ul>
             </nav>
 
-            <h1 id="titulo-portfolio">Portfólio</h1>
-            <div class="trilho">
-                <div class="indicador">
-                    <i class="bi-moon-stars-fill" id="aparecerLuaSol"></i>
+            <h1 id="titulo-portfolio" class="text-[7vw] md:text-[4vw] text-color2 font-robotoMono font-semibold absolute left-1/2 -translate-x-1/2 -z-10">Portfólio</h1>
+            <div class="trilho border border-color2 rounded-[50px] px-4 cursor-pointer -z-10">
+                <div class="indicador bg-color3 border border-color3 rounded-[50px] p-1 -translate-x-5 transition duration-700  text-color5 drop-shadow-sm">
+                    <i class="bi-moon-stars-fill p-1" id="aparecerLuaSol"></i>
                 </div>
             </div>
         </header>
     
-        <section class="introducao">
-            <article id="corpo-introducao">
-                <div class="corpo-titulo">
-                    <hgroup id="titulo">
-                        <h1>Olá,&nbsp;</h1>
-                        <p id="p_nome">Me chamo Crystian.</p>
+        <section class="introducao-light shadow-dark dark:introducao transition duration-500 dark:shadow-white flex flex-col justify-center items-center">
+            <article id="corpo-introducao" class="flex justify-center flex-col-reverse md:flex-row items-center h-[80vh] gap-[5px] md:gap-10 w-full">
+                <div class="corpo-titulo flex flex-col gap-[30px] w-full md:w-1/2">
+                    <hgroup id="titulo" class="font-robotoSlab rounded-xl pl-2 shadow-color3">
+                        <h1 class="text-[6vw] md:text-[4vw] lg:text-[3vw] [text-shadow:2px_2px_1px_var(--color2)] text-center" id="p_nome"></h1>
                     </hgroup> 
 
-                    <div id="actions">
-                        <a id="download-cv" href="./assets/Crystian Tasca Mattos.pdf" download>Download CV</a>   
-                        <a class="enter-contato" href="mailto:crystianmattos20@gmail.com" target="_blank">Entrar em contato</a>   
+                    <div id="actions" class="flex flex-col justify-center gap-5 items-center font-robotoMono text-[3vw] md:flex-row md:text-[2vw] lg:text-[1.5vw] lg:gap-10">
+                        <a id="download-cv" class="p-[10px] w-[70%] text-center rounded-[30px] text-color5 bg-color2 scale-105 transition duration-700 hover:scale-100 hover:bg-color3" href="./assets/Crystian Tasca Mattos.pdf" download>Download CV</a>   
+                        <a class="enter-contato p-[10px] text-center w-[70%] rounded-[30px] text-color1 dark:text-color5 border border-color2 scale-105 transition duration-700 hover:scale-100 hover:bg-color2 hover:text-color5" href="mailto:crystianmattos20@gmail.com" target="_blank">Entrar em contato</a>   
                     </div>                 
                 </div>
 
-                <a href="https://www.github.com/Legolas-2023" id="corpo-imagem" target="_blank">
-                    <img id="logo-fundo" src="./assets/fundo.png" alt="Fundo Spiral">
-                    <img id="logo-1" src="./assets/logo.png" alt="Foto Crystian">
+                <a href="https://www.github.com/Legolas-2023" id="corpo-imagem" class="flex items-center justify-center w-[30%] sm:w-[30%]" target="_blank">
+                    <img id="logo-fundo" class="relative w-full animate-imagemLogo" src="./assets/fundo.png" alt="Fundo Spiral">
+                    <img id="logo-1" class="absolute w-[30%] sm:w-[20%] transition duration-700 hover:scale-125" src="./assets/logo.png" alt="Foto Crystian">
                 </a>
                 
             </article>
-            <aside id="arrow">
-                <a href="#about"><i class="bi bi-arrow-down-circle"></i></a>
+            <aside id="arrow" class="w-full text-center">
+                <a href="#about"><i class="bi bi-arrow-down-circle text-[10vw] lg:text-[5vw] text-color5 transition duration-1000 cursor-pointer mx-auto mt-0 animate-icone hover:drop-shadow-xs hover:animate-iconeD"></i></a>
             </aside>
         </section>
 
-        <main id="index">
-            <section id="about">
+        <main id="index" class="flex flex-col text-center space-y-96 mt-24">
+            <section id="about" class="flex flex-col w-[60%] my-0 mx-auto leading-10 space-y-20 max-[1024px]:w-[90%]">
                 <h2>Sobre Mim</h2>
-                <p class="group">
-                    Sou Analista em Sistemas baseado em aplicações Developer Front End e aplicações envolvendo a robótica. Apaixonado pelo mundo da programação, meu objetivo é sempre desenvolver projetos e estou sempre em busca de novos aprendizados. Gosto de aprender e a ensinar, como diz, segundo o filósofo Paulo Freire: <span>"Quem ensina aprende ao ensinar. E quem aprende ensina ao aprender."</span>
+                <p class="text-[1.25rem] font-dmSans">
+                    Formado em Análise e Desenvolvimento de Sistemas, com interesse em desenvolvimento Front-End, automação de processos e soluções voltadas à tecnologia. Apaixonado pelo universo da programação, busco constantemente aprender novas ferramentas, desenvolver projetos e aprimorar minhas habilidades técnicas através da prática. Tenho experiência no desenvolvimento de aplicações utilizando HTML, CSS, JavaScript, Tailwind CSS e Power BI, além de projetos voltados para automação de processos, dashboards corporativos e melhoria operacional. Acredito que tecnologia vai além do código:<span class="text-color4 bg-color3 opacity-0 italic animate-icone"> envolve aprendizado contínuo, colaboração e resolução de problemas reais.</span>
                 </p>
             </section>
 
-            <section id="tools">
+            <section id="tools" class="space-y-20">
                 <h2>Principais Tecnologias e Ferramentas:</h2>
-                <aside id="tools-imagens" data-ferramentas>
+                <aside id="tools-imagens" class="grid grid-cols-2 md:grid-cols-4 gap-10 justify-center items-center mx-6 dark:text-color4" data-ferramentas>
                 </aside>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="space-y-20">
                 <h2>Projetos</h2>
-                <aside id="projects-imagens" data-projetos>
+                <aside id="projects-imagens" class="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-dmSans relative mx-4" data-projetos>
                 </aside>
             </section>
  
-            <footer id="contact" class="contact-cards">
+            <footer id="contact" class="contact-cards dark:bg-color1 bg-color8 space-y-20">
                 <h2>Contato</h2>
-                <aside id="icons-contact">
-                    <a id="card" class="icon-link" href="https://www.linkedin.com/in/crystian-tasca" target="_blank">
-                        <i class="bi bi-linkedin"></i>
+                <aside id="icons-contact" class="grid grid-cols-2 lg:grid-cols-4 transition duration-700 ease-in-out mx-3 gap-10">
+                    <a class="card group" href="https://www.linkedin.com/in/crystian-tasca" target="_blank">
+                        <i class="icon-contact bi bi-linkedin group-hover:bg-color5"></i>
                         <h3 class="title-link">Linkedin</h3>
                         <p class="link-rede">@crystian-tasca</p>
                     </a>
-                    <a id="card" class="icon-link" href="mailto:crystianmattos20@gmail.com" target="_blank">
-                        <i class="bi bi-envelope-at-fill"></i>
+                    <a class="card group" href="mailto:crystianmattos20@gmail.com" target="_blank">
+                        <i class="icon-contact bi bi-envelope-at-fill group-hover:bg-color5"></i>
                         <h3 class="title-link">E-mail</h3>
                         <p  class="link-rede">crystianmattos20@gmail.com</p>
                     </a>
-                    <a id="card" class="icon-link" href="https://www.github.com/Legolas-2023" target="_blank">
-                        <i class="bi bi-github appli"></i>
+                    <a class="card group" href="https://www.github.com/Legolas-2023" target="_blank">
+                        <i class="icon-contact bi bi-github appli group-hover:bg-color5"></i>
                         <h3 class="title-link">Github</h3>
                         <p  class="link-rede">@Legolas-2023</p>
                     </a>
-                    <a id="card" class="icon-link" href="https://api.whatsapp.com/send?phone=5532998147490" target="_blank">
-                        <i class="bi bi-telephone-fill"></i>
+                    <a class="card group" href="https://api.whatsapp.com/send?phone=5532998147490" target="_blank">
+                        <i class="icon-contact bi bi-telephone-fill group-hover:bg-color5"></i>
                         <h3 class="title-link">Telefone</h3>
                         <p  class="link-rede">(32) 99814-7490</p>
                     </a>
                 </aside>
-                <div id="Copyright"> 
+                <div id="Copyright" class="mt-[60px] p-[10px] text-[1.25rem] bg-color3 text-color4"> 
                     <p>Copyright &copy; Crystian Tasca 2024</p>
                 </div>
             </footer>
@@ -127,4 +126,5 @@
     <script src="./js/script.js"></script>
     <script type="module" src="./js/mostrarFerramentas.js"></script>
     <script type="module" src="./js/mostrarProjetos.js"></script>
+    <script src="./js/teste.js"></script>
 </html>
