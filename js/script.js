@@ -18,27 +18,11 @@ const fecharlink = document.querySelectorAll('li.paginas-navegacao').forEach(lin
   return closelink
 }))
 
-
-const btn = document.querySelector('.trilho')
 let indicador = document.querySelector('.indicador');
 let aparecerSL = document.querySelector('#aparecerLuaSol');
-let imagemIntroducao = document.querySelector('.introducao');
-let botaoContato = document.querySelector('.enter-contato');
-let secaoSobre = document.querySelector('.group');
-let contactCards = document.querySelector('.contact-cards')
 
-btn.addEventListener('click', (el) =>{
-  let light = indicador.classList.toggle('indicadorSol')
-  aparecerSL.classList.toggle('bi-sun-fill')
-  imagemIntroducao.classList.toggle('introducao-light')
-  botaoContato.classList.toggle('enter-contato-light')
-  secaoSobre.classList.toggle('group-light')
-  contactCards.classList.toggle('cards-light')
-
-  if(light){
-    document.body.style.backgroundColor = 'var(--color5)'
-    
-  }else{
-    document.body.style.backgroundColor = 'var(--color1)'
-  }
+const btn = document.querySelector('.trilho').addEventListener('click', (el) =>{
+  let light = indicador.classList.toggle('indicadorSol');
+  document.documentElement.classList.toggle('dark');
+  aparecerSL.classList.toggle('bi-sun-fill');
 })
