@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap&Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap&family=Poetsen+One&display=swap&family=DM+Sans:wght@400;500;700');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    *{
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+    }
+
+    :root{
+    --color1: #09142D;
+    --color2: #3E3EED;
+    --color3: #192951;
+    --color4: #AAB1C1;
+    --color5: #ffffff;
+    --color6: #000000;
+    --color7: #ff0000;
+    --rgbaBlack: rgba(0, 0, 0, 0.9);
+    --rgbaWhite: rgba(255, 255, 255, 0.5);
+    }
+        
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(90,90,90,1);
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: var(--color6);
+    }
+
+    h2{
+        @apply text-[2rem] font-robotoSlab text-color2 font-semibold;
+    }
+
+}
+
+@layer components{
+    .paginas-navegacao{
+        @apply uppercase font-semibold text-[1.7rem] transition duration-700 ease-in-out flex-grow first:capitalize hover:scale-125;
+    }
+
+    div.indicadorSol{
+        @apply translate-x-5 bg-color2 transition duration-700;
+    }
+
+    .introducao{
+        background: url('/assets/background.png') center / cover no-repeat fixed;
+    }
+
+    .introducao-light{
+        background: url('/assets/background_2.png') center / cover no-repeat fixed;
+    }
+
+    .card{
+        @apply text-center font-robotoMono flex justify-center flex-col items-center flex-wrap shrink transition duration-500 ease-in-out hover:scale-105;
+    }
+
+    .icon-contact{
+        @apply rounded-[50px] w-[60px] h-[60px] text-[1.87rem] bg-color2 text-color1 flex justify-center items-center;
+    }
+
+    .title-link{
+        @apply text-color3 dark:text-color5 font-medium mt-10 hidden min-[425px]:block;
+    }
+
+    .link-rede{
+        @apply dark:text-color4 text-color5 hidden sm:block;
+    }
+
+}
